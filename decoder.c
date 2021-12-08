@@ -140,6 +140,7 @@ int main(){
 					ris = ris + 8 * (pow(10, 3-i));
 					break;
 				//1, 4, 7 and 8 have a unique lenght, so i don't have to check their segments, just the lenght
+				//for the other numbers, i checked their ascii character encoding (as I did when finding bottom)
 				 case 6:
 					stupidsum = 0;
 					for(j=0; j<6; j++)
@@ -176,7 +177,7 @@ int main(){
                                                 }
                                  default:
 					break;
-				} //for the other numbers, i checked their ascii character encoding (as I did when finding bottom)
+				} 
 			}
 			sums++;
 			printf("RIS:%d\n" , ris);
